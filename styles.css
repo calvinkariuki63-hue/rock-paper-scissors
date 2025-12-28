@@ -64,7 +64,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(231, 216, 7, 0.1);
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
@@ -88,7 +88,7 @@ h1 {
   border: none;
   cursor: pointer;
   background: linear-gradient(145deg, #ff9800, #ffc107);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 18px rgba(237, 165, 9, 0.4);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
