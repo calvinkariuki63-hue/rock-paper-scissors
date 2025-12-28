@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock • Paper • Scissors Deluxe</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="overlay hidden"></div>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup hidden">
+    <h2 id="popupTitle">You Win!</h2>
+    <p id="popupMessage">Nice move!</p>
+    <button id="popupBtn">Continue</button>
+  </div>
+
   <div class="game-container">
     <h1>Rock • Paper • Scissors</h1>
 
@@ -31,22 +43,23 @@
     </div>
 
     <div class="arena hidden">
-      <img id="playerPick" class="pick" src="rock.png" alt="player choice">
+      <img id="playerPick" class="pick" src="rock.png">
       <div class="vs">VS</div>
-      <img id="computerPick" class="pick" src="rock.png" alt="computer choice">
+      <img id="computerPick" class="pick" src="rock.png">
     </div>
 
     <div class="choices hidden">
-      <button class="choice" data-choice="rock"><img src="icon-rock.svg" alt="Rock"></button>
-      <button class="choice" data-choice="paper"><img src="icon-paper.svg" alt="Paper"></button>
-      <button class="choice" data-choice="scissors"><img src="icon-scissors.svg" alt="Scissors"></button>
+      <button class="choice" data-choice="rock"><img src="icon-rock.svg"></button>
+      <button class="choice" data-choice="paper"><img src="icon-paper.svg"></button>
+      <button class="choice" data-choice="scissors"><img src="icon-scissors.svg"></button>
     </div>
 
     <div id="resultText" class="result hidden">Choose your weapon</div>
     <div id="streakText" class="streak hidden"></div>
 
     <button id="resetBtn" class="reset hidden">Restart Match</button>
-    <h1>Made by Calvin Kibue</h1>
+
+    <h1 style="font-size:1rem;margin-top:15px;">Made by Calvin Kibue</h1>
   </div>
 
   <audio id="soundWin" src="win.mp3"></audio>
