@@ -135,7 +135,7 @@ h1 { margin:0; letter-spacing:1px; }
 .vs { font-weight:bold; opacity:0.7; font-size:1.2rem; }
 
 .choices { display:flex; justify-content:space-around; margin:25px 0; }
-.choice { width:70px; height:70px; border-radius:18px; border:none; cursor:pointer; background:rgba(255,255,255,0.1); transition:transform 0.15s; display:flex; align-items:center; justify-content:center; }
+.choice { width:70px; height:70px; border-radius:18px; border:none; cursor:pointer; background:rgba(230, 159, 6, 0.933); transition:transform 0.15s; display:flex; align-items:center; justify-content:center; }
 .choice img { width:50px; height:50px; }
 .choice:hover { transform:translateY(-4px); }
 
