@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rock • Paper • Scissors</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rock • Paper • Scissors</h1>
+    <p class="subtitle">First to 5 wins the match</p>
+
+    <div class="scoreboard">
+      <div class="score">
+        <span>You</span>
+        <strong id="playerScore">0</strong>
+      </div>
+      <div class="score">
+        <span>Bot</span>
+        <strong id="computerScore">0</strong>
+      </div>
+    </div>
+
+    <div class="arena">
+      <div id="playerPick" class="pick">❔</div>
+      <div class="vs">VS</div>
+      <div id="computerPick" class="pick">❔</div>
+    </div>
+
+    <div class="choices">
+      <button class="choice" data-choice="rock">🪨</button>
+      <button class="choice" data-choice="paper">📄</button>
+      <button class="choice" data-choice="scissors">✂️</button>
+    </div>
+
+    <div id="resultText" class="result">
+      Choose your weapon
+    </div>
+
+    <button id="resetBtn" class="reset hidden">Restart Match</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
